@@ -1,0 +1,36 @@
+h1{color:#000000}
+.header{
+ background-color:#ffffff;
+ display:flex;
+ justify-content: space-evenly ;
+ align-items: flex-start;
+}
+.grid{
+  display: flex;  
+  background-color:#ffffff;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+p,h2{
+ text-align: center;
+}
+
+.item{
+ position:relative; 
+}
+
+.item p{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);  
+  opacity: 0;
+}
+
+.item:hover p{
+  opacity: 1;
+}
+
+.item:hover img{
+  opacity: 0.33;
+}
